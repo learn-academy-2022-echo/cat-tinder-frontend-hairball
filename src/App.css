@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: pink;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  background-color: #F3DFC1 ;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white
+}
+
+a:hover {
+  color: green
+}
+
+a:link{
+  color: #368F8B;
+  /* background-color: yellow */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+  background-color: #F3DFC1;
+  width: 100%;
+  color: #160f29
+}
+
