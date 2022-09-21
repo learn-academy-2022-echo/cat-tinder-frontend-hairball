@@ -33,15 +33,3 @@ describe("<Header/>", () => {
         expect(editText.getAttribute('href')).toBe('/catedit')
     })
 })
-
-/*
- PASS  src/components/Footer.test.js
- PASS  src/pages/NotFound.test.js
- PASS  src/components/Header.test.js
- PASS  src/pages/Home.test.js
-
-Test Suites: 4 passed, 4 total
-Tests:       5 passed, 5 total
-Snapshots:   0 total
-Time:        2.498 s
-*/
