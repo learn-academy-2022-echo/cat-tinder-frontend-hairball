@@ -6,7 +6,7 @@ const CatIndex = ({ cats }) => {
 
     return (
 
-        <div classname="cat-cards">
+        <div className="cat-cards">
         { cats.map(cat => {
             return (
                 
