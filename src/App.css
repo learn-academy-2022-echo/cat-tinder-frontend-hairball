@@ -80,3 +80,11 @@ footer {
 div {
   background-color: #DDBEA8;
 }
+
+.cat-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px 25px 25px 25px;
+  gap: 1%;
+}
