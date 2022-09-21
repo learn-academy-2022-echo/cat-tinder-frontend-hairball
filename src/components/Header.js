@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav, NavItem } from "reactstrap"
 import { NavLink } from "react-router-dom"
+import catcouple from '../assets/catcouple.png'
 
 const Header = () => {
     return (
@@ -11,9 +12,12 @@ const Header = () => {
                 fill
                 pills
             >
+            <NavLink to="/">
+                <img src={catcouple} alt="Cat Tinder logo" className="logo"/>
+            </NavLink>
             <NavItem>
                 <NavLink to="/catindex">
-                Home
+                Take me to the cats!
                 </NavLink>
             </NavItem>
             <NavItem>

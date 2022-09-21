@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -38,7 +39,7 @@
 }
 
 header {
-  background-color: #F3DFC1 ;
+  background-color: #246A73 ;
 }
 
 a {
@@ -65,8 +66,17 @@ footer {
   display: flex;
   justify-content: space-around;
   font-size: 10px;
-  background-color: #F3DFC1;
+  background-color: #246A73;
   width: 100%;
   color: #160f29
 }
 
+.logo {
+  margin-left: 20px;
+  width: 10%;
+  border-radius: 30px;
+}
+
+div {
+  background-color: #DDBEA8;
+}
