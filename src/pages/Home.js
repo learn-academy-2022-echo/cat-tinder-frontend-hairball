@@ -1,14 +1,13 @@
 import React from 'react'
 import catcouple from "../assets/catcouple.png"
+import { BrowserRouter } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <>
-        <div>
-            <h1>Home</h1>
+        <main>
+            <h1>Welcome to Cat Tinder</h1>
             <img src={catcouple} alt="silhouette of a cat couple"/>
-        </div>
-        </>
+        </main>
     )
 }
 
