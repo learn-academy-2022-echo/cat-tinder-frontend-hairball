@@ -48,16 +48,15 @@ a {
 }
 
 a:visited {
-  color: white
+  color: white !important;
 }
 
 a:hover {
-  color: green
+  color: green !important;
 }
 
 a:link{
-  color: #368F8B;
-  /* background-color: yellow */
+  color: #368F8B !important;
 }
 
 footer {
@@ -85,6 +84,13 @@ div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-shrink: 1;
   padding: 25px 25px 25px 25px;
   gap: 1%;
+  background-color: #DDBEA8 !important;
+}
+
+.container{
+  width: 50%;
+  height: 50%;
 }
