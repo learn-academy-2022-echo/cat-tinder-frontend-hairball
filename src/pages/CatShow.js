@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, CardBody, CardTitle, CardText } from 'reactstrap'
-import { useParams } from 'react-router-dom'
+import { Card, CardBody, CardTitle, CardText, Button } from 'reactstrap'
+import { useParams, NavLink } from 'react-router-dom'
 
 const CatShow = ({ cats }) => {
     const { id } = useParams()
@@ -23,6 +23,13 @@ const CatShow = ({ cats }) => {
                         <br/>
                         {cat.name} enjoys {cat.enjoys}
                     </CardText>
+                    
+                    <NavLink to={`/catedit/${cat.id}`}>
+                        <Button>
+                        Edit {cat.name}'s Profile
+                        </Button>
+                    </NavLink>
+                    
                 </CardBody>
             </Card>    
         </>

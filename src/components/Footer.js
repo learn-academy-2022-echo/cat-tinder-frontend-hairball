@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
         <footer>
-            Site Made By: Cathrine and Daniel
+            Site Created By: Cathrine and Daniel
         </footer>
         </>
     )
