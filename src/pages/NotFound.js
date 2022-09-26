@@ -4,9 +4,10 @@ import NotFoundCat from '../assets/NotFound.jpeg'
 const NotFound = () => {
     return (
         <>
-        <div>Page Not Found</div>
-        <img src={NotFoundCat}>
-        </img>
+        <h1>Page Not Found
+        <br></br>
+        <img src={NotFoundCat} className='picture' />
+        </h1>
         </>
     )
 }

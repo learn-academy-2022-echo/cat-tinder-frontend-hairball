@@ -37,7 +37,7 @@ const CatNew = ({createCat}) => {
                     <Input type="number" name="age" placeholder="Enter text here" onChange={handleCats} value={newCat.age} onKeyDown={ e => ( e.keyCode === 69 || e.keyCode === 190 ) && e.preventDefault() }/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="enjoys">Does your cat have any quirky interests?</Label>
+                    <Label for="enjoys">Does your cat have any interests?</Label>
                     <Input type="text" name="enjoys" placeholder="Enter text here" onChange={handleCats} value={newCat.enjoys}/>
                 </FormGroup>
                 <FormGroup>

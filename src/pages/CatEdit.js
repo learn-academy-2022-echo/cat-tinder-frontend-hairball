@@ -10,40 +10,42 @@ const CatEdit = ({ cats, updateCat }) => {
     let currentCat =  cats?.find(cat => cat.id === +id)
 
     const [ editCat, setEditCat ] = useState({
-        name: "",
-        age: "",
-        enjoys: "",
-        image: ""
+        name: currentCat.name,
+        age: currentCat.age,
+        enjoys: currentCat.enjoys,
+        image: currentCat.image
     })
+
     const handleChangeCat = (e) => {
         setEditCat({ ...editCat, [e.target.name]: e.target.value })
     }
+    
     const handleSubmit = () => {
         updateCat(editCat, currentCat.id)
         console.log(editCat)
-        alert("Cat profile has been updated!")
-        navigate('/catindex')
+            alert("Cat profile has been updated!")
+            navigate(`/catshow/${id}`)
     }
    
     return (
          <div className='container'>
-            <h1 style={{textAlign:"center"}}>Edit Cat</h1>
+            <h1 style={{textAlign:"center"}}>Edit {currentCat.name}</h1>
             <Form>
                 <FormGroup>
-                    <Label for="name">Enter cat's name</Label>
-                    <Input type="text" name="name" placeholder="Enter text here" onChange={handleChangeCat} value={editCat.name}/>
+                    <Label for="name">Edit cat's name</Label>
+                    <Input type="text" name="name" placeholder={currentCat.name} onChange={handleChangeCat} value={editCat.name}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="age">Enter cat's age</Label>
-                    <Input type="number" name="age" placeholder="Enter text here" onChange={handleChangeCat} value={editCat.age}/>
+                    <Label for="age">Edit cat's age</Label>
+                    <Input type="number" name="age" placeholder={currentCat.age} onChange={handleChangeCat} value={editCat.age}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="enjoys">Enter quirky interests</Label>
-                    <Input type="text" name="enjoys" placeholder="Enter text here" onChange={handleChangeCat} value={editCat.enjoys}/>
+                    <Label for="enjoys">Edit interests</Label>
+                    <Input type="text" name="enjoys" placeholder={currentCat.enjoys} onChange={handleChangeCat} value={editCat.enjoys} defaultValue={currentCat.enjoys}/>
                 </FormGroup>
                 <FormGroup>
-                    <Label for="image">Image URL for your cat</Label>
-                    <Input type="url" name="image" placeholder="Enter URL here" onChange={handleChangeCat} value={editCat.image}/>
+                    <Label for="image">Image URL for cat</Label>
+                    <Input type="url" name="image" placeholder={currentCat.image} onChange={handleChangeCat} value={editCat.image}/>
                 </FormGroup>
                 <Button onClick={handleSubmit} name="submit">
                 Submit
