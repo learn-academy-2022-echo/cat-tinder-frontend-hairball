@@ -15,8 +15,8 @@ a:hover, a:active {
   font-family: Monospace;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
-  flex-shrink: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 25px 25px 25px 25px;
   gap: 1%;
   padding: 20px;
